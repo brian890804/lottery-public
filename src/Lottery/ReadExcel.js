@@ -36,7 +36,7 @@ export default function ReadExcel() {
       }
     } else {
       let set = new Set();
-      while ([...set].length < 10) {
+      while ([...set].length < number) {
         let random = Math.floor(Math.random() * (Rows.length - 1)) + 1;
         if (!set.has(random)) set.add(random);
       }
